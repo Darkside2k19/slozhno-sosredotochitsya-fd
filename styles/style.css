@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, sans-serif), sans-serif;
   background-color: var(--bg-color);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@
 .header__theme-menu-button {
   width: 70px;
   height: 26px;
-  border: none;
+  border: 1px solid transparent;
   color: var(--button-text-color);
   font-size: var(--text-font-size, 18px);
   background-color: transparent;
@@ -195,7 +195,6 @@
 }
 
 .section__article-link:focus {
-  border: 1px solid var(--text-color);
   outline: none;
   text-decoration-color: var(--text-color);
 }
@@ -219,7 +218,8 @@
 }
 
 .gallery__image {
-  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 /*Футер*/
